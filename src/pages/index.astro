@@ -33,35 +33,17 @@ const work = await Promise.all(
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Salut, moi c'est Gaspard <span class="text-xl">👋🏻</span> 
+        hey, i'm Gaspard <span class="text-xl">☝️<span class="hover:animate-bounce">🤓</span></span>
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate italic">
-            Ce site est encore en construction, n'hésitez pas à revenir plus tard 🛠️
+            This website is still under construction, don't hesitate to come back later 🛠️
           </p>
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
-            </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
-          </p>
-          <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
+            I'm an engineering student from northern France, currently studying at
+            <Link href="https://imt-nord-europe.fr/" aria-label="IMT Nord Europe's website" external>IMT Nord Europe</Link> and doing a mobility at <Link href="https://www.tuwien.at/en/" external>TUWien</Link>.
           </p>
         </article>
       </section>
@@ -69,10 +51,10 @@ const work = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Latest blog posts
           </h5>
           <Link href="/blog">
-            See all posts
+            see all posts
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -90,7 +72,7 @@ const work = await Promise.all(
             Work Experience
           </h5>
           <Link href="/work">
-            See all work
+            see all work
           </Link>
         </div>
         <ul class="flex flex-col space-y-4">
@@ -119,7 +101,7 @@ const work = await Promise.all(
             Recent projects
           </h5>
           <Link href="/projects">
-            See all projects
+            see all projects
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
@@ -138,7 +120,10 @@ const work = await Promise.all(
         <article>
           <p>
             If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
+            reach out on Linkedin or send me an email.
+          </p>
+          <p>
+            If you are interested by my profile, you can .
           </p>
         </article>
         <ul class="flex flex-wrap gap-2">
@@ -147,7 +132,7 @@ const work = await Promise.all(
               <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
                 {SOCIAL.NAME}
               </Link>
-              {"/"}
+              {"-"}
             </li>
           ))}
           <li class="line-clamp-1">
