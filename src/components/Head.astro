@@ -126,12 +126,19 @@ const { title, description, image = "/nano.png" } = Astro.props;
     });
   }
 
+  let lastScrollY = window.scrollY;
   function onScroll() {
     if (window.scrollY > 0) {
       document.documentElement.classList.add("scrolled");
     } else {
       document.documentElement.classList.remove("scrolled");
     }
+    if (window.scrollY < lastScrollY || window.scrollY < 100) {
+        document.documentElement.classList.remove("down-scroll");
+      } else {
+        document.documentElement.classList.add("down-scroll");
+      }
+      lastScrollY = window.scrollY;
   }
 
   function scrollToTop(event) {

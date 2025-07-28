@@ -24,9 +24,12 @@ body {
 }
 
 header {
-  @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply backdrop-blur-sm saturate-200 bg-gradient-to-b;
-  @apply from-neutral-100 bg-opacity-75 dark:from-neutral-900 dark:bg-opacity-25 from-15%;
+  @apply fixed top-0 left-0 right-0 z-50;
+  @apply transition-transform duration-700 ease-in-out;
+}
+
+html.down-scroll header {
+  @apply -translate-y-full;
 }
 
 main {
