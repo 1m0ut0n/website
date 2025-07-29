@@ -6,4 +6,12 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://gasprd.net",
   integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      themes: {
+        light: "light-plus",
+        dark: "dark-plus",
+      },
+    },
+  },
 });
