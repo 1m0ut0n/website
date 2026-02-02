@@ -38,7 +38,7 @@ footer {
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-semibold prose-p:font-serif;
+  @apply prose-headings:font-semibold prose-p:font-sans;
   @apply prose-headings:text-black prose-headings:dark:text-white;
 }
 
@@ -79,4 +79,58 @@ html.dark .astro-code span {
   font-style: var(--shiki-dark-font-style) !important;
   font-weight: var(--shiki-dark-font-weight) !important;
   text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+@font-face {
+  font-family: "Luciole";
+  src: url("/fonts/Luciole-Regular/Luciole-Regular.eot");
+  src: url("/fonts/Luciole-Regular/Luciole-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Luciole-Regular/Luciole-Regular.woff") format("woff"),
+    url("/fonts/Luciole-Regular/Luciole-Regular.ttf") format("truetype"),
+    url("/fonts/Luciole-Regular/Luciole-Regular.svg#Luciole-Regular")
+      format("svg");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Luciole";
+  src: url("/fonts/Luciole-Bold/Luciole-Bold.eot");
+  src: url("/fonts/Luciole-Bold/Luciole-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Luciole-Bold/Luciole-Bold.woff") format("woff"),
+    url("/fonts/Luciole-Bold/Luciole-Bold.ttf") format("truetype"),
+    url("/fonts/Luciole-Bold/Luciole-Bold.svg#Luciole-Bold") format("svg");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Luciole";
+  src: url("/fonts/Luciole-Italic/Luciole-Italic.eot");
+  src: url("/fonts/Luciole-Italic/Luciole-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Luciole-Italic/Luciole-Italic.woff") format("woff"),
+    url("/fonts/Luciole-Italic/Luciole-Italic.ttf") format("truetype"),
+    url("/fonts/Luciole-Italic/Luciole-Italic.svg#Luciole-Italic") format("svg");
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Luciole";
+  src: url("/fonts/Luciole-BoldItalic/Luciole-BoldItalic.eot");
+  src: url("/fonts/Luciole-BoldItalic/Luciole-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Luciole-BoldItalic/Luciole-BoldItalic.woff") format("woff"),
+    url("/fonts/Luciole-BoldItalic/Luciole-BoldItalic.ttf") format("truetype"),
+    url("/fonts/Luciole-BoldItalic/Luciole-BoldItalic.svg#Luciole-BoldItalic")
+      format("svg");
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
 }
