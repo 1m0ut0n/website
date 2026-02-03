@@ -3,7 +3,7 @@
 ***This is the source code of my personal website.***
 
 This is where I present myself, my personal and professional experiences.
-I also sometimes post blog articles or talk a little about my projects.
+I might also sometimes post blog articles or talk a little about my projects.
 
 ## 🛠️ Stack
 
@@ -11,7 +11,7 @@ I also sometimes post blog articles or talk a little about my projects.
 
 Thanks to that, it has a perfect Lighthouse score, is really fast, lightweight, and has a lot of neat functionalities.
 
-I modified it to my preferences so that it looks even better!
+I modified it to my preferences so that it looks even better! I also used the [Luciole](https://luciole-vision.com/en/index.html) font for better readability for visually impaired people.
 
 ## 🏦 License
 
