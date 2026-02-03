@@ -8,27 +8,21 @@ import { SITE } from "@consts";
       <div class="flex flex-wrap gap-y-2 justify-between">
         <Link href="/" underline={false}>
           <div class="font-semibold">
-            {SITE.NAME}
+            {SITE.NAME}.net
           </div>
         </Link>
-        <nav class="flex gap-1">
+        <nav class="flex gap-6">
           <Link href="/blog">
-            <span class="hidden sm:inline">the </span>
-            <span>blog</span>
+            <span class="hidden sm:inline">The </span>
+            <span>Blog</span>
           </Link>
-          <span>
-            {`-`}
-          </span>
           <Link href="/work">
-             <span class="hidden sm:inline">the </span>
-            <span>work</span>
+             <span class="hidden sm:inline">The </span>
+            <span>Work</span>
           </Link>
-          <span>
-            {`-`}
-          </span>
           <Link href="/projects">
-            <span class="hidden sm:inline">the </span>
-            <span>projects</span>
+            <span class="hidden sm:inline">The </span>
+            <span>Projects</span>
           </Link>
         </nav>
       </div>
