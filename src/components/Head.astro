@@ -65,8 +65,8 @@ const { title, description, image } = Astro.props;
 <link rel="alternate" type="application/rss+xml" title={SITE.NAME} href={new URL("rss.xml", Astro.site)} />
 
 <!-- Plausible Self-Hosted Analitics -->
-<script defer data-domain="gasprd.net" src="https://analytics.gasprd.net/js/script.file-downloads.hash.outbound-links.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script is:inline defer data-domain="gasprd.net" src="https://analytics.gasprd.net/js/script.file-downloads.hash.outbound-links.js"></script>
+<script is:inline>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
 
 <script>
