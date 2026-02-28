@@ -64,6 +64,11 @@ const { title, description, image } = Astro.props;
 <!-- RSS Link -->
 <link rel="alternate" type="application/rss+xml" title={SITE.NAME} href={new URL("rss.xml", Astro.site)} />
 
+<!-- Plausible Self-Hosted Analitics -->
+<script defer data-domain="gasprd.net" src="https://analytics.gasprd.net/js/script.file-downloads.hash.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client";
   document.addEventListener("astro:before-swap", (e) =>
